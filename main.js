@@ -1,3 +1,5 @@
+// 1
+
 const cards = document.querySelector('.cards')
 
 const xhr = new XMLHttpRequest()
@@ -29,6 +31,7 @@ xhr.addEventListener("load", () => {
     })
 })
 
+// 2
 const obj = new XMLHttpRequest()
 obj.open("GET", "main.json")
 obj.setRequestHeader("Content-type", "application/json")
@@ -37,3 +40,4 @@ obj.send()
 obj.onload = () => {
     console.log(JSON.parse(obj.response))
 }
+
